@@ -19,11 +19,11 @@ When you're ready to start using Travis CI, head over to the [billing page](http
 ## Can I use pull request testing on Travis CI for private repositories?
 
 Yes, you can. It's enabled by default for all repositories set up on Travis CI. See
-the [blog post](https://blog.travis-ci.com/announcing-pull-request-support/) accompanying the launch of pull requests for Travis CI.
+the [blog post](https://travis-ci.com/blog/announcing-pull-request-support/) accompanying the launch of pull requests for Travis CI.
 
 ## Who has access to the builds?
 
-Access rights on Travis CI is based on the access rights on GitHub, Bitbucket, GitLab or Assembla:
+Access rights on Travis CI are based on the access rights on GitHub, Bitbucket, GitLab or Assembla:
 
 - Users that can access a repository on GitHub, Bitbucket, GitLab or Assembla can see the build status and logs on Travis CI.
 - Users that can push to a repository on GitHub, Bitbucket, GitLab or Assembla can trigger, cancel and restart builds, and change its settings.
@@ -33,7 +33,7 @@ To keep the access rights up to date, we sync every user account approximately o
 
 ## Who has access to the billing details?
 
-Access rights to the Travis CI [billing page](https://travis-ci.com/account/subscription) can be one of the following:
+Access rights to the Travis CI [billing page](https://app.travis-ci.com/account/plan) can be one of the following:
 
 - **Open (default)**: anyone with admin access to at least one private repository belonging to the organization in GitHub/GitLab/Assembla or team in Bitbucket has access to the billing information in Travis CI.
 - **Restricted**: for GitHub users access is limited to members of the organization having the _owner_ and/or _billing manager_ permissions in GitHub (see their [documentation about the _Permission levels for an organization_](https://help.github.com/articles/permission-levels-for-an-organization/)).
@@ -41,11 +41,11 @@ Access rights to the Travis CI [billing page](https://travis-ci.com/account/subs
 - **Restricted**: for GitLab users access is limited to members of the organization having read and write permissions in GitLab.
 - **Restricted**: for Assembla users access is limited to members of the organization having read and write permissions in Assembla.
 
-You can change the access rights to **Restricted** (or back to **Open**) under the *Organizations* tab on [our Subscription page](https://travis-ci.com/account/subscription) as shown below:
+You can change the access rights to **Restricted** (or back to **Open**) under the *Organizations* tab on [our Plan page](https://app.travis-ci.com/account/plan) as shown below:
 
 ![Billing access toggle](/images/admin_only_toggle.png "Billing access toggle")
 
-## Is it safe to give Travis CI access to my private code?
+## Is giving Travis CI access to my private code safe?
 
 Security is our major concern when it comes to your source code. At Travis CI, we make sure our infrastructure is protected and secure so that your most valuable asset is safe and protected from unauthorized access.
 
@@ -60,9 +60,9 @@ You can follow our guide for [encrypting files](/user/encrypting-files/).
 Starting June 2021 travis-ci.org is disabled and therefore no longer supported. Please use travis-ci.com.
 
 For a list of plans and prices for private repositories, look at
-[travis-ci.com/plans](https://travis-ci.com/plans) for not authorized users.
+[travis-ci.com/pricing](https://travis-ci.com/pricing) for not authorized users.
 For a list of plans and prices for private repositories, look at
-[travis-ci.com/subscription](https://travis-ci.com/account/subscription) for authorized users.
+[app.travis-ci.com/account/plan](https://app.travis-ci.com/account/plan) for authorized users.
 
 ## How can I make a private repository public on GitHub?
 
@@ -87,7 +87,7 @@ If you're using the Travis CI [command line client](https://github.com/travis-ci
    ```sh
    travis endpoint --com --set-default
    ```
-   
+
 ## How can I set the repository privacy status on Bitbucket?
 
 If you want to set the privacy status for a Bitbucket repository, follow the [instructions on
